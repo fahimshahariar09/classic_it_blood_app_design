@@ -12,7 +12,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal:30 ),
+        padding: const EdgeInsets.symmetric(horizontal: 30),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,11 +42,13 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 20,
               ),
-              const Text("Password",
+              const Text(
+                "Password",
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: Colors.grey,
-                ),),
+                ),
+              ),
               const TextField(
                 decoration: InputDecoration(
                     suffixIcon: Icon(Icons.remove_red_eye_outlined)),
@@ -64,7 +66,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 40,),
+              const SizedBox(
+                height: 40,
+              ),
               Container(
                 height: 60,
                 width: double.infinity,
@@ -72,16 +76,32 @@ class _LoginPageState extends State<LoginPage> {
                   color: const Color(0xFFD80032),
                   borderRadius: BorderRadius.circular(30),
                 ),
-                child: const Center(child: Text("Login",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w400,fontSize: 22,),),),
+                child: const Center(
+                  child: Text(
+                    "Login",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 22,
+                    ),
+                  ),
+                ),
               ),
-              const SizedBox(height: 40,),
+              const SizedBox(
+                height: 40,
+              ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("OR",style: TextStyle(color: Color(0xFF877E7F)),),
+                  Text(
+                    "OR",
+                    style: TextStyle(color: Color(0xFF877E7F)),
+                  ),
                 ],
               ),
-              const SizedBox(height: 40,),
+              const SizedBox(
+                height: 40,
+              ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -96,8 +116,16 @@ class _LoginPageState extends State<LoginPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            Icon(Icons.g_mobiledata,color:Colors.green,size: 40,),
-                            Text("Sign in with Google",style: TextStyle(fontSize: 18,color: Colors.grey),),
+                            Icon(
+                              Icons.g_mobiledata,
+                              color: Colors.green,
+                              size: 40,
+                            ),
+                            Text(
+                              "Sign in with Google",
+                              style:
+                                  TextStyle(fontSize: 18, color: Colors.grey),
+                            ),
                           ],
                         ),
                       ),
@@ -105,30 +133,27 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 50,),
-              Row(
+              const SizedBox(
+                height: 50,
+              ),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  RichText(text:const TextSpan(
-                    children: [
-                      TextSpan(
-                        text: "Don't have an account? ",
-                          style: TextStyle(
-                              color: Color(0xFF877E7F),
-                            fontSize:15,fontWeight: FontWeight.w200
-                          )
-                      ),
-                      TextSpan(
-                        text: "Sign UP",
-                        style: TextStyle(
-                          color: Color(0xFFDC1A47),
-                          fontWeight: FontWeight.bold
-                        )
-                      )
-                    ]
+                  Text(
+                    "Don't have an account? ",
+                    style: TextStyle(
+                      color: Color(0xFF877E7F),
+                      fontSize: 15,
+                      fontWeight: FontWeight.w200,
+                    ),
                   ),
-
-                  )
+                  Text(
+                    "Sign UP",
+                    style: TextStyle(
+                      color: Color(0xFFDC1A47),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               )
             ],
