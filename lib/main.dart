@@ -1,3 +1,4 @@
+import 'package:blood/home/home1_page.dart';
 import 'package:blood/home/home_page.dart';
 import 'package:blood/view/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  SplashScreen(),
+      home:  Home1Page(),
     );
   }
 }
