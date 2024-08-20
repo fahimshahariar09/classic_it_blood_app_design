@@ -115,7 +115,7 @@ class _Home1PageState extends State<Home1Page> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
-                height: 150,
+                height: 160,
                 width: MediaQuery.of(context).size.width,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
